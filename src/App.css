@@ -1,0 +1,234 @@
+body {
+  --mono_100: #f8f9fa;
+  --mono_200: #e9ecef;
+  --mono_300: #dee2e6;
+  --mono_400: #ced4da;
+  --mono_500: #adb5bd;
+  --mono_600: #6c757d;
+  --mono_700: #495057;
+  --mono_800: #343a40;
+  --mono_900: #212529;
+
+  --egg: #fef9c3;
+  --yellow: #fef263;
+  --green: #839b5c;
+  --blue: #2c4c64;
+  --pink: #f9a8d4;
+  --red: #d3381c;
+  --orange: #ee7800;
+  --purple: #a59aca;
+}
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  background-color: #fffef7;
+  overflow: auto;
+}
+
+.green_font {
+  color: var(--green);
+}
+
+.pink_font {
+  color: var(--pink);
+}
+
+.diptych {
+  padding-top: 150px;
+  padding-left: 100px;
+  padding-right: 100px;
+
+  align-items: center;
+}
+
+.diptych_top_row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.diptych_top_column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.diptych_info_row {
+  width: 60%;
+}
+
+.diptych_info_column {
+  width: 100%;
+}
+
+.lato_font {
+  font-family: "Lato", sans-serif;
+}
+
+.vollkorn_font {
+  font-family: "Vollkorn";
+}
+
+.diptych_title {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.diptych_description {
+  margin: 50px 0;
+  color: var(--mono_700);
+}
+
+.diptych_upload_row {
+  width: 40%;
+  background-color: var(--egg);
+  border-radius: 10px;
+  color: var(--mono_700);
+  max-width: 600px;
+}
+
+.diptych_upload_column {
+  width: 100%;
+  background-color: var(--egg);
+  border-radius: 10px;
+  color: var(--mono_700);
+  max-width: 600px;
+}
+
+.diptych_upload_header {
+  padding: 20px;
+  font-weight: 700;
+  border-bottom: 1px solid var(--yellow);
+}
+
+.diptych_upload_body {
+  padding: 20px;
+}
+
+.diptych_upload_buttons {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.diptych_upload_button {
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: var(--mono_200);
+  cursor: pointer;
+}
+
+.diptych_upload_button:hover {
+  opacity: 0.8;
+}
+
+.diptych_upload_button_clickable {
+  cursor: pointer;
+}
+
+.diptych_upload_button_clickable:hover {
+  opacity: 0.8;
+}
+
+.diptych_upload_button_not_clickable {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.diptych_upload_button_rotate {
+  padding: 0px 5px;
+}
+
+.diptych_upload_button_swap {
+  font-size: 20px;
+  text-align: center;
+  padding: 0px 40px;
+}
+
+.diptych_upload_download {
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.diptych_upload_download_button {
+  font-weight: 600;
+  width: 120px;
+  margin: auto;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: var(--mono_200);
+  cursor: pointer;
+}
+
+.diptych_upload_download_button:hover {
+  opacity: 08;
+}
+
+.diptych_preview {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  font-size: 40px;
+  background-color: black;
+  margin-bottom: 50px;
+}
+
+.diptych_preview_middle {
+  width: 1.5%;
+  background-color: black;
+}
+
+.diptych_preview_image {
+  width: 49.25%;
+}
+
+.diptych_preview_image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.diptych_preview_dummy {
+  padding: 10% 0;
+  line-height: 400px;
+  width: 49.25%;
+  background-color: var(--mono_700);
+  font-size: 120px;
+  text-align: center;
+}
+
+.diptych_preview_dummy p {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+.diptych_footer {
+  text-align: center;
+  font-weight: 600;
+}
+
+.diptych_link {
+  color: var(--purple);
+  cursor: pointer;
+}
+
+.diptych_link:hover {
+  opacity: 0.7;
+}
+
+.diptych_footer {
+  border-top: 1px solid var(--mono_200);
+  padding: 20px;
+}
+
+input[type="file"] {
+  display: none;
+}
